@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 @Builder
 @Entity
-public class movie {
+public class movies {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

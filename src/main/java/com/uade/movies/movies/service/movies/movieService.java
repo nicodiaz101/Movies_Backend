@@ -3,9 +3,9 @@ package com.uade.movies.movies.service.movies;
 import java.util.List;
 import java.util.Optional;
 
-import com.uade.movies.movies.entity.movie;
+import com.uade.movies.movies.entity.movies;
 
 public interface movieService {
-    public List<movie> getAllMovies();
-    public Optional<movie> getMovieById(Long id);
+    public List<movies> getAllMovies();
+    public Optional<movies> getMovieById(Long id);
 }
