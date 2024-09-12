@@ -1,5 +1,8 @@
 package com.uade.movies.movies.service;
 
-public class movieService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class movieService {
+    
 }
