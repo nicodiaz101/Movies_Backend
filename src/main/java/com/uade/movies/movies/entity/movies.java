@@ -9,11 +9,11 @@ import lombok.Data;
 
 @Data
 @Entity
+
 public class movies {
     public movies(String title){
-        this.title = title;
-    }
 
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

@@ -25,12 +25,9 @@ public class movieServiceImpl implements movieService {
     }
 
     public movies createMovie (String title) throws CategoryDuplicateException {
-        List<movies> movies = movieRepository.findAll();
-        if (movies.stream().anyMatch(
-                movie -> movie.getTitle().equals(title))) {
-            throw new CategoryDuplicateException();
-        }
+        List<movies> movies = movieRepository.findByTitle(title);
+        if (movies.isEmpty())
         return movieRepository.save(new movies(title));
+            throw new CategoryDuplicateException();
     }
-
 }
